@@ -1,0 +1,271 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>Interview Questions</title>
+    <meta charset="utf-8" />
+    <link href="style.css" rel="stylesheet" />
+    <link href="interview.css" rel="stylesheet" />
+</head>
+<body>
+    <div class="container">
+
+        <h2>HR Questions</h2>
+
+        <dl>
+            <dt>What is your view of the Dream Team?</dt>
+            <dd>Team size: about 10 peoples, team roles - Business Analitic, Dev, Qa</dd>
+
+            <dt>Unit Test?</dt>
+            <dd>It's non optional thing.</dd>
+
+            <dt>What is your overall experience in years?</dt>
+            <dd>starting from 2011</dd>
+
+            <dt>Education?</dt>
+            <dd>KNU, Radio Physical Department, my specialization is applied physics.</dd>
+
+            <dt>Year of grad?</dt>
+            <dd>2012</dd>
+
+            <dt>What was your roles on your previous project?</dt>
+            <dd>Full Stack Developer, I implement all part of the project starting DB using Entity Framefork Code First, in last project, and Finishing UI and finising implementing UI using Angular and CSS and Web Services;</dd>
+
+            <dt>About customer communication? Direct or through your manager?</dt>
+            <dd>
+                We have communicate with my manager, so manager was communicate with business in most cases, sometimes we have meeting with manager and customer,
+                where we discuss some questions; one more possible way to communicate was email with customer and manager; It depent on the question, but usually my question was to
+                first to manager, and then manager help to find contact person, or solve by himself;
+            </dd>
+
+            <dt>How you want improve your role in our company? In Tech side or manager?</dt>
+            <dd>Tech.</dd>
+
+            <dt>What technoligy you want to improve?</dt>
+            <dd>It's depent on project. I sure Powershell knowladge may be very helpful in lot count of projects.</dd>
+
+        </dl>
+
+        <h2>Technical General Questions</h2>
+
+        <dl>
+            <dt>What is your honor related in tech?</dt>
+            <dt>Tell about your role?</dt>
+            <dt>Why you are intrensing in this position?</dt>
+        </dl>
+
+        <h2>.NET Question</h2>
+        <dl>
+            <dt>What is the difference between class and struct?</dt>
+            <dd>
+                <ul>
+                    <li>Class instances are provided by references, struct instances are provided by values.</li>
+                    <li>Class instances are stored in the managed heap, instead of struct instances - in the thread stack</li>
+                    <li>Class intances are managed by Garbage Collector.</li>
+                </ul>
+            </dd>
+
+            <dt>What is boxing/unboxing?</dt>
+
+            <dt>What is using?</dt>
+
+            <dt>What is IDisposable?</dt>
+
+            <dt>What is garbage collector?</dt>
+
+            <dd>
+                Garbage collector is .NET Framework subsystem, that dispose unused objects and return memory back to the the system.
+                Garbage collector very complex system, that improves in every big release of .NET framework, but there are few basic concept -
+                There are 2 garbage collector generation.
+            </dd>
+
+            <dt>How about Big Objects?</dt>
+
+            <dt>What is the difference between finalizing and disposing?</dt>
+            <dd>Disposing have determinate execution, but Finalizer have non-determinate.</dd>
+
+            <dt>Microsoft Suggested Implementation of IDisposable?</dt>
+
+            <dd>
+                <pre>
+using System;
+class DisposableClass : IDisposable
+{
+    // A name to keep track of the object.
+    public string Name = "";
+    // Free managed and unmanaged resources.
+    public void Dispose()
+    {
+        FreeResources(true);
+    }
+    // Destructor to clean up unmanaged resources
+    // but not managed resources.
+    ~DisposableClass()
+    {
+        FreeResources(false);
+    }
+    // Keep track if whether resources are already freed.
+    private bool ResourcesAreFreed = false;
+    // Free resources.
+    private void FreeResources(bool freeManagedResources)
+    {
+        Console.WriteLine(Name + ": FreeResources");
+        if (!ResourcesAreFreed)
+        {
+            // Dispose of managed resources if appropriate.
+            if (freeManagedResources)
+            {
+                // Dispose of managed resources here.
+                Console.WriteLine(Name + ": Dispose of managed resources");
+            }
+            // Dispose of unmanaged resources here.
+            Console.WriteLine(Name + ": Dispose of unmanaged resources");
+            // Remember that we have disposed of resources.
+            ResourcesAreFreed = true;
+            // We don't need the destructor because
+            // our resources are already freed.
+            GC.SuppressFinalize(this);
+        }
+    }
+}
+                </pre>
+            </dd>
+
+            <dt>What is Singelton?</dt>
+
+            <dt>Provide Implementation of singleton in C#</dt>
+
+            <dt>About polymorphism?</dt>
+
+            <dd>
+                Polimorphysm Implementation in C#
+                <ul>
+                    <li>Method overrides</li>
+                    <li>virtual/override methods</li>
+                    <li>intefaces</li>
+                </ul>
+            </dd>
+
+            <dt>What is break of polimorph chain?</dt>
+            <dd>
+                call new operator to create new object is break polymorph chain;
+            </dd>
+
+            <dt>What is index in MSSQL?</dt>    
+
+            <dt>What is clustered index in MSSQL?</dt>
+
+            <dt>What is stored procedure?</dt>
+
+            <dt>How ORM works?</dt>
+
+            <dt>Difference between IQueryble&lt;T&gt; and IEnumerable&lt;T&gt; </dt>
+
+            <dt>Provide singelton implementation example</dt>
+
+            <dt>Provide thread-safe implementation of setter. </dt>
+
+        </dl>
+
+        
+
+        <h2>JavaScript Questions</h2>
+
+        <dl>
+            <dt>Types in Javascrips?</dt>
+            <dd>number, string, object, function, undefined</dd>
+
+            <dt>what is result typeof(null)?</dt>
+
+            <dt>difference between == and ===</dt>
+
+            <dt>What is boobling?</dt>
+
+            <dt>What is <dfn>this</dfn> in JavaScript?</dt>
+
+            <dt>What is closure?</dt>
+
+            <dt>How inheritance works in JS</dt>
+
+            <dt>How function can be declared?</dt>
+
+            <dt>What is the difference between different function declaration.</dt>
+
+            <dt>How we can change context of the function?</dt>
+            <dd>call, apply, bind</dd>
+
+            <dt>What is promises?</dt>
+
+            <dt>
+                what will be the ouput? Provide the expected solution.
+                <pre>
+for (var i = 0; i < 5; i++) {
+  setTimeout(function() { console.log(i); }, i * 1000 );
+}
+</pre>
+            </dt>
+
+            <dd>
+                5,5,5,5,5
+                <pre>
+for (var i = 0; i < 5; i++) {
+	(function(x) {
+    	setTimeout(function() { console.log(x); }, x * 1000 );
+    })(i);
+}
+</pre>
+            </dd>
+
+
+            <dt>
+                What the result?
+                <pre>
+var hero = {
+    _name: 'John Doe',
+    nf : { name : this._name },
+    getSecretIdentity: function (){
+        return this._name;
+    }
+};
+console.log(hero.nf.name);
+var stoleSecretIdentity = hero.getSecretIdentity;
+console.log(stoleSecretIdentity());
+console.log(hero.getSecretIdentity());
+</pre>
+            </dt>
+
+        </dl>
+
+        <h2>Angular Question</h2>
+
+        <dl>
+            <dt>How can we share data between controllers?</dt>
+            <dt>Services, Controller alias, RootScope</dt>
+            <dt>What is the rootScope and Scope?</dt>
+            <dt>What is controller?</dt>
+            <dt>What is the difference between controller and factory?</dt>
+            <dt>What is digest cycle?</dt>
+            <dt>What is the difference between scope.$apply() and scope.$digest()</dt>
+            <dt>What is directive?</dt>
+        </dl>
+
+        <h2>Other</h2>
+
+        <dl>
+            <dt>Linux knowladge</dt>
+            <dt>Git knowladge. How to migrate few commits between repositories.</dt>
+            <dt>What is median in terms of DevOps?</dt>
+        </dl>
+
+    </div>
+
+
+
+
+
+    <div class="footer">
+        <div class="container">
+            <a href="index.html">Home</a>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,79 @@
+﻿
+.ico-english {
+    background: url(/images/english.jpg);
+    height: 75px;
+}
+
+.ico-charp {
+    background: url(/images/c-sharp-icon.png);
+    height: 100px;
+}
+
+.ico-patterns {
+    background: url(/images/patterns.jpg);
+    height: 65px;
+}
+
+.ico-js {
+    background: url(/images/js.png);
+}
+
+.ico-angular {
+    background: url(/images/angular.png);
+}
+
+.ico-angular2 {
+    background: url(/images/angular2.png);
+}
+
+.ico-ps {
+    background-image: url(/images/powershell.jpg);
+}
+
+#books {
+    margin: auto;
+}
+
+.book {
+    width: 100px;
+}
+
+.book-cs5t {
+    background-image: url('images/charp5troelsen.jpg');
+    height: 132px;
+}
+
+.book-cs6n {
+    background-image: url('images/charp6nagel.jpg');
+    height: 125px;
+}
+
+.book-jsf {
+    background-image: url('images/js-flenegan.gif');
+    height: 131px;
+}
+
+.book-edp {
+    background-image: url('images/des-pat.gif');
+    height: 131px;
+}
+
+.book-des-pat-budai {
+    background-image: url('images/design-patters-budai.png');
+    height: 131px;
+}
+
+.book-ng-book {
+    background-image: url('images/ng-book.png');
+    height: 122px;
+}
+
+.book-ng2 {
+    background-image: url('images/ng-book-2.png');
+    height: 123px;
+}
+
+.book-psa {
+    background-image: url('images/ps-in-action.png');
+    height: 125px;
+}
