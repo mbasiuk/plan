@@ -274,6 +274,9 @@ console.log(hero.getSecretIdentity());
                 <dt>We have 7 tables with hierarchy 1 to many; Every table can contain some 1 to 10 records.  How can we build the tree on UI that 
                     should work as quick as possible, and support expand all function;</dt>
                 <dt>What is relation beetween Aplication Service, Domain Service, Domain, Page Controller and system transaction;<dt>
+                <dt>there are the table structure. device(id, name), customer(id, deciceId), relatedDevice(parentId, chilId) ,
+                    message(deviceId, time); about 1kk customers, up to 20 devices and about 5k new messages per second; We need  system that show messages per user
+                    for every device with child devices; What is the problem?
                 <dt>We have the system build as chain of services; Every services know only one nearest services; We got business requirement in audit some action
                     from last system to first including all in chain; For example  How can we implement it with minimal effort; (answer: provide guid on first item and provide it for all chain)
                 </dt>  
